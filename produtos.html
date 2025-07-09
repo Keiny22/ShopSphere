@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricardo Manzala Paulo Albano">
+    <title>Produtos -ShopTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">ShopTech</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="index.html#about">Sobre Nós</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar produtos...">
+                <button id="search-button">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-list-section">
+            <div class="container">
+                <h2>Todos os Produtos</h2>
+                <div class="filters">
+                    <label for="category-filter">Filtrar por Categoria:</label>
+                    <select id="category-filter">
+                        <option value="all">Todas</option>
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="moda">Moda</option>
+                        <option value="casa">Casa e Decoração</option>
+                        <option value="livros">Livros</option>
+                    </select>
+
+                    <label for="price-filter">Filtrar por Preço:</label>
+                    <select id="price-filter">
+                        <option value="all">Qualquer Preço</option>
+                        <option value="0-50">Até R$50</option>
+                        <option value="51-200">R$51 - R$200</option>
+                        <option value="201-500">R$201 - R$500</option>
+                        <option value="501-plus">Acima de R$500</option>
+                    </select>
+                </div>
+                <div class="product-grid" id="all-products-grid">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+              <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width: 30px; height: 30px; filter: invert(1);"></a>
+
+                <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width: 30px; height: 30px; filter: invert(1);"></a>
+
+                <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" style="width: 30px; height: 30px; filter: invert(1);"></a>
+            </div>
+            <p>&copy; ShopTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

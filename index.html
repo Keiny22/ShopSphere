@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricardo Manzala Paulo Albano">
+    <title>ShopTech - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">ShopTech</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar produtos...">
+                <button id="search-button">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=600&fit=crop&crop=center'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div class="container">
+                <h2>Novidades Chegando!</h2>
+                <p>Confira nossa seleção exclusiva de produtos para todas as suas necessidades.</p>
+                <a href="produtos.html" class="btn btn-primary">Comprar Agora</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Produtos em Destaque</h2>
+                <div class="product-grid">
+                    <div class="product-item" data-id="1">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop&crop=center" alt="Fone de Ouvido XYZ">
+
+                        <h3>Fone de Ouvido XYZ</h3>
+                        <p class="price">R$ 199,90</p>
+                        <button class="btn btn-add-to-cart">Adicionar ao Carrinho</button>
+                        <a href="detalhes-produto.html?id=1" class="btn btn-secondary btn-details">Ver Detalhes</a>
+                    </div>
+                    <div class="product-item" data-id="2">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=200&fit=crop&crop=center" alt="Smartwatch Moderno">
+                        <h3>Smartwatch Moderno</h3>
+                        <p class="price">R$ 499,90</p>
+                        <button class="btn btn-add-to-cart">Adicionar ao Carrinho</button>
+                        <a href="detalhes-produto.html?id=2" class="btn btn-secondary btn-details">Ver Detalhes</a>
+                    </div>
+                    <div class="product-item" data-id="3">
+                       <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=300&h=200&fit=crop&crop=center" alt="Câmera Digital Pro">
+                        <h3>Câmera Digital Pro</h3>
+                        <p class="price">R$ 899,00</p>
+                        <button class="btn btn-add-to-cart">Adicionar ao Carrinho</button>
+                        <a href="detalhes-produto.html?id=3" class="btn btn-secondary btn-details">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-overview">
+            <div class="container">
+                <h2>Explore por Categoria</h2>
+                <div class="category-grid">
+                    <a href="produtos.html?category=eletronicos" class="category-item" style="background-image: url('https://images.unsplash.com/photo-1547082299-de196ea013d6?w=300&h=200&fit=crop&crop=center'); background-size: cover; background-position: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; min-height: 150px; font-weight: bold; font-size: 1.2em;">Eletrônicos</a>
+                    <a href="produtos.html?category=moda" class="category-item" style="background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=300&h=200&fit=crop&crop=center'); background-size: cover; background-position: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; min-height: 150px; font-weight: bold; font-size: 1.2em;">Moda</a>
+                    <a href="produtos.html?category=casa" class="category-item" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=200&fit=crop&crop=center'); background-size: cover; background-position: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; min-height: 150px; font-weight: bold; font-size: 1.2em;">Casa e Decoração</a>
+                    <a href="produtos.html?category=livros" class="category-item" style="background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=200&fit=crop&crop=center'); background-size: cover; background-position: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; min-height: 150px; font-weight: bold; font-size: 1.2em;">Livros</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-us">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Somos a ShopTech , dedicados a oferecer os melhores produtos com qualidade e preços justos. Nossa missão é proporcionar uma experiência de compra online excepcional, com atendimento ao cliente de primeira linha e entrega rápida.</p>
+                <p>Desde 2020, trabalhamos incansavelmente para trazer as últimas tendências e inovações diretamente para sua casa. Agradecemos por nos escolher!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="social-media" id="contact">
+               <a href="https://www.facebook.com/keiny.flush" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width: 30px; height: 30px; filter: invert(1);"></a>
+
+                <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width: 30px; height: 30px; filter: invert(1);"></a>
+
+                <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" style="width: 30px; height: 30px; filter: invert(1);"></a>
+            </div>
+            <p>&copy; 2025 ShopTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
